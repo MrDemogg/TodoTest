@@ -14,9 +14,9 @@ const TodosColumn: FC<TodosColumnProps> = ({selectedTodos, todos, setTodos}) => 
     setTodos({...todos, [selectedTodos]: newTodos})
   }
   return (
-    <Card style={{ width: '23.3%' }}>
+    <Card style={{ width: '33%' }}>
       <Card.Header>
-        <Card.Title>{selectedTodos}</Card.Title>
+        <Card.Title style={{textAlign: 'center'}}>{selectedTodos}</Card.Title>
       </Card.Header>
       <Card.Body>
         {todos[selectedTodos]

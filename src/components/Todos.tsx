@@ -14,7 +14,7 @@ const Todos = () => {
       <Card.Header>
         <TodosInput setTodos={setTodos} todos={todos} />
       </Card.Header>
-      <Card.Body style={{width: '90%', margin: '0 auto', display: 'flex', justifyContent: 'space-between'}}>
+      <Card.Body style={{width: '99%', margin: '0 auto', display: 'flex', justifyContent: 'space-between'}}>
         <TodosColumn setTodos={setTodos} todos={todos} selectedTodos='To Do'/>
         <TodosColumn setTodos={setTodos} todos={todos} selectedTodos='In Progress'/>
         <TodosColumn setTodos={setTodos} todos={todos} selectedTodos='Done'/>
